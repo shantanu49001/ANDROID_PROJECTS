@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Create Layout</string>
+    <string name="scheduled">SCHEDULED</string>
+    <string name="flight_departing_in_5_days">FLIGHT DEPARTING IN 5 DAYS</string>
+    <string name="pnr_no">PNR: KY9/432776</string>
+    <string name="flight_duration">FLIGHT DURATION</string>
+    <string name="departure_time">DEPARTURE TIME</string>
+    <string name="terminal">TERMINAL</string>
+    <string name="gate">GATE</string>
+    <string name="seat">SEAT</string>
+    <string name="flight_no">FLIGHT NO.</string>
+    <string name="koyon">KOYON</string>
+    <string name="more">MORE...</string>
+    <string name="total_fare">TOTAL FARE:</string>
+    <string name="important_information_label">Important Information:</string>
+    <string name="important_information">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper gravida arcu, at pretium
+        justo facilisis at. Duis consequat scelerisque nulla. Pellentesque id elit facilisis,
+        lobortis sem at, consectetur est. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin ex eros, vulputate eget rhoncus in, efficitur eget est. Donec tincidunt condimentum
+        ante, varius tristique magna vestibulum vitae. Suspendisse sit amet lacinia purus. Aliquam
+        finibus ac erat non gravida. Nulla mattis malesuada ex, ac sollicitudin nisi posuere ut.
+        In sodales luctus diam ac sodales. Donec ut urna sit amet elit molestie ultricies eget sed nulla.
+        \n\n
+        Phasellus porta est orci, non dignissim ante aliquet sed. Donec facilisis feugiat lacus,
+        ac semper nisi finibus sed. In eleifend metus eu magna porttitor ultrices sit amet eu diam.
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum fringilla arcu
+        enim, porta egestas lorem posuere nec. Aliquam erat volutpat. Cras fermentum urna et
+        volutpat lacinia. Vivamus eleifend iaculis turpis, a molestie augue tincidunt sit amet.
+        Aliquam semper mauris vel ipsum finibus malesuada. Aenean iaculis nibh eu ante ornare
+        sollicitudin. Aenean ac posuere tellus. Vestibulum rhoncus rhoncus commodo. Proin dolor
+        erat, pulvinar ac semper quis, sodales non est. Ut non nisl et risus sodales ultrices
+        vel et risus. Vivamus sed nunc vitae dolor aliquet blandit.
+        \n\n
+        Nulla dignissim purus ac enim porta mollis. Fusce ullamcorper dolor nec eleifend venenatis.
+        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        In pretium ipsum ut interdum blandit. Praesent blandit imperdiet purus sit amet vehicula.
+        Nulla facilisi. Phasellus ut risus tristique, euismod risus et, pulvinar sapien. Morbi
+        mauris lorem, iaculis sit amet efficitur quis, tristique at ex. Mauris venenatis euismod
+        lectus ut varius. Nullam consequat, elit et placerat finibus, ante tellus aliquam sapien,
+        et tincidunt risus purus non tellus. Morbi vitae metus id mauris ultrices semper vitae ut
+        ante. Nullam interdum, odio eget posuere porttitor, tortor dui tristique nunc, vel varius
+        erat erat at elit. Ut eget erat condimentum, lacinia eros vitae, posuere nulla. Phasellus
+        et diam augue. Integer vel felis purus. Suspendisse euismod justo eu arcu laoreet, ac
+        iaculis risus volutpat.
+        \n\n
+    </string>
+    <string name="first_name">FIRST NAME</string>
+    <string name="last_name">LAST NAME</string>
+    <string name="gender">Gender</string>
+    <string name="age">Age</string>
+</resources>

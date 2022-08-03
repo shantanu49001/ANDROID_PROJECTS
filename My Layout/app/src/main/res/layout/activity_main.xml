@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!---parent of screen-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity"
+    >
+    <!--parent pf all compnents-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--first component is a text view this is not the schedule conatiner this is outer div of schedule-->
+        <TextView
+            android:id="@+id/sechedule_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colourAccent"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:text="@string/SCHEDULED"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+<!--next we have div conating clock string-->
+
+        <LinearLayout
+            android:id="@+id/schedule_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:background="@color/colourAccent"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/watch"
+                android:layout_height="24dp"
+                android:layout_width="24dp"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_baseline_watch_later_24" />
+            <TextView
+                android:id="@+id/departTimeLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="FLIGHT DEPARTURE IN 5 MINS"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/Pnr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colourAccent"
+            android:text="PNR-1120"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="8dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/fn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FIRST NAME"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JOHN"
+                    android:textStyle="bold" />
+            </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginStart="25dp"
+               android:layout_marginLeft="55dp">
+               <TextView
+                   android:id="@+id/ln"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="LASTNAME"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="DOE"/>
+           </LinearLayout>
+            <LinearLayout
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AGE"
+                />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="32"
+                 android:textStyle="bold"/>
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GENDER"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MALE"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/depart_airport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="DEL"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/depart_airport_full"
+                android:layout_below="@id/depart_airport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DELHI"
+                android:textSize="12sp"
+                />
+                <TextView
+                    android:id="@+id/arrival_airport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="NAG"
+                    android:textStyle="bold"
+                    />
+            <TextView
+                android:id="@+id/arrival_airport_full"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/arrival_airport"
+                android:layout_alignParentRight="true"
+                android:text="NAGPUR"
+                />
+
+            <TextView
+                android:id="@+id/center_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="FLIGHT DURATION"
+                />
+            <View
+                android:id="@+id/sep"
+                android:layout_width="2dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/center_part"
+                android:layout_toRightOf="@id/arrival_airport"
+                android:layout_toLeftOf="@id/depart_airport"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@color/colourAccent"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/center_part"
+                android:text="7 HRS 45 MINS "
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:id="@+id/airport_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="24dp">
+
+                <ImageView
+                    android:id="@+id/flight_takeOff"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/depart_airport_full"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_baseline_flight_takeoff_24" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:id="@+id/depart_airport_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxWidth="1"
+                        android:text="Indira Gandhi International Airport,Delhi" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Monday, 18th March"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/airport_map"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/depart_airport_name"
+                        app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/departure_terminal_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/airport_container"
+                    android:layout_alignParentLeft="true"
+                    android:text="DEPARTURE TIME" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
