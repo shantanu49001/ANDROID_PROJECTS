@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 
 class HelloActivity : AppCompatActivity() {
     @SuppressLint("StringFormatInvalid")
@@ -16,6 +17,8 @@ class HelloActivity : AppCompatActivity() {
           //labdba functio  ka one and only arg is string
             val name=findViewById<TextView>(R.id.text)//get the text holdre
             name.text=getString(R.string.guest_name,it)
+
+            Toast.makeText(this,"This activity was called by $it",Toast.LENGTH_LONG).show()
         }
     }
 }
