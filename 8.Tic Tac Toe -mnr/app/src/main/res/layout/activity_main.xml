@@ -21,14 +21,12 @@
 
     <TextView
         android:id="@+id/player_one_label"
-        android:layout_width="91dp"
         android:layout_height="39dp"
-        android:text="PLAYER1"
-        android:layout_marginTop="10dp"
         android:paddingTop="4dp"
+        android:text="PLAYER1"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        tools:layout_editor_absoluteY="32dp" />
+        tools:layout_editor_absoluteY="32dp"  android:layout_width=""/>
 
     <EditText
         android:id="@+id/player_one_label"
