@@ -66,7 +66,8 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="@+id/player_one_label"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/player_one_label" />
+        app:layout_constraintTop_toTopOf="@+id/player_one_label"
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:id="@+id/board"
