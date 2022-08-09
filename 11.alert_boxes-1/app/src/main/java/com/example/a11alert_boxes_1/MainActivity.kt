@@ -107,6 +107,4 @@ class MainActivity : AppCompatActivity() {
             })
         }
         val alertDialog=builder.create()
-        alertDialog.show()
-    }
-    }
+        alertDialog.show() } }

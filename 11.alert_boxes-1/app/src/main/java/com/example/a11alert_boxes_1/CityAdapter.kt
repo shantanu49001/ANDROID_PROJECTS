@@ -33,7 +33,4 @@ class CityAdapter(val cityData: MutableList<City>):BaseAdapter(){
         cityCountry.text=getItem(position).country
         cityName.text=getItem(position).name
         return convertView
-    }
-
-
-}
+    } }
