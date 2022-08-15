@@ -7,10 +7,10 @@
 
     <ImageView
         android:id="@+id/country_flag"
-        android:layout_width="416dp"
-        android:layout_height="249dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="104dp"
+        android:layout_width="148dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
         android:contentDescription="@string/country_flag"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,10 +18,10 @@
 
     <TextView
         android:id="@+id/country_name"
-        android:layout_width="310dp"
-        android:layout_height="103dp"
-        android:layout_marginStart="580dp"
-        android:layout_marginTop="104dp"
+        android:layout_width="115dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="72dp"
         android:text="TextView"
         android:textAlignment="center"
         android:textSize="34sp"
@@ -30,10 +30,10 @@
 
     <TextView
         android:id="@+id/country_capital"
-        android:layout_width="310dp"
-        android:layout_height="108dp"
-        android:layout_marginStart="580dp"
-        android:layout_marginTop="244dp"
+        android:layout_width="113dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="124dp"
         android:text="TextView"
         android:textAlignment="center"
         android:textSize="34sp"

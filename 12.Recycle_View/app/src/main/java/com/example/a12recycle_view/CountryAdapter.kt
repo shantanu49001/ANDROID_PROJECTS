@@ -1,5 +1,6 @@
 package com.example.a12recycle_view
 
+import android.provider.ContactsContract
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,17 +8,31 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class CountryAdapter:RecyclerView.Adapter<CountryAdapter.CountryViewHolder>() {
+class CountryAdapter(private val listener:(Country)->Unit):RecyclerView.Adapter<CountryAdapter.CountryViewHolder>() {
     var countryData= arrayOf<Country>()
     set(value) {//cutomise the setter
         field=value
         notifyDataSetChanged()
     }
                            //view=inflated layout of recycler view
-    class CountryViewHolder(view: View):RecyclerView.ViewHolder(view){
+  inner  class CountryViewHolder(view: View):RecyclerView.ViewHolder(view){
         val countryFlag:ImageView=view.findViewById(R.id.country_flag)
          val countryName:TextView=view.findViewById(R.id.country_name)
          val countryCity:TextView=view.findViewById(R.id.country_capital)
+
+                               //event listening
+    init {
+        itemView.setOnClickListener{
+            listener.invoke(countryData[adapterPosition])
+        }
+    }
+                               fun bind(countryData: Country){
+                                   with(countryData){
+                                       countryFlag.setImageResource(flagId)
+                                       countryName.text=name
+                                       this@CountryViewHolder.countryCity.text=capitalCity
+                                   }
+                               }
     }
 
     override fun getItemCount()=countryData.size

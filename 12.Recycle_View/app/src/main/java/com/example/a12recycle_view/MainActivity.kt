@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -31,9 +32,10 @@ class MainActivity : AppCompatActivity() {
         val countryList=findViewById<RecyclerView>(R.id.country_list).apply {
            //positions the items of recycleview
             layoutManager=LinearLayoutManager(this@MainActivity)//this is a recycler view so that it can refer t current object=whenever there is ambguity of main activit e
-            adapter=CountryAdapter().apply {
-                setHasStableIds(true)
-            }
+            adapter=CountryAdapter {
+            //Toast.makeText("${it.capitalCity}".toString())
+            }.apply{setHasStableIds(true)}
+
             setHasFixedSize(true)
 
         }
