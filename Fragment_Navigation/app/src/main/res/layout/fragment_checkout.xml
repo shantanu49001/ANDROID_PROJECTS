@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/shopping_cart"
+        android:layout_width="346dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:text="Shopping Cart"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="155dp"
+        android:layout_height="128dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/app_4" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="154dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="110dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="160dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/order_total"
+        android:layout_width="366dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="280dp"
+        android:text="Order Total: Rs. 65000"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/checkout"
+        android:layout_width="131dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="400dp"
+        android:text="CHECKOUT" />
+
+</FrameLayout>

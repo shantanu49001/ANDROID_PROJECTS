@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.fragment_navigation.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_home_to_detail"
+            app:destination="@id/detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/detail"
+        android:name="com.example.fragment_navigation.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detail_to_checkout"
+            app:destination="@id/checkout" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkout"
+        android:name="com.example.fragment_navigation.CheckoutFragment"
+        android:label="fragment_checkout"
+        tools:layout="@layout/fragment_checkout" >
+        <action
+            android:id="@+id/action_checkout_to_thanks"
+            app:destination="@id/thanks"
+            app:popUpTo="@id/detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/thanks"
+        android:name="com.example.fragment_navigation.ThanksFragment"
+        android:label="fragment_thanks"
+        tools:layout="@layout/fragment_thanks" >
+        <action
+            android:id="@+id/action_thanks_to_home"
+            app:destination="@id/home"
+            app:popUpTo="@id/home"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
