@@ -20,7 +20,7 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/image"
+        android:id="@+id/product_image"
         android:layout_width="155dp"
         android:layout_height="128dp"
         android:layout_marginLeft="18dp"
@@ -28,7 +28,7 @@
         android:src="@drawable/app_4" />
 
     <TextView
-        android:id="@+id/price"
+        android:id="@+id/product_price"
         android:layout_width="154dp"
         android:layout_height="41dp"
         android:layout_marginLeft="190dp"
@@ -36,19 +36,20 @@
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/quantity"
+        android:id="@+id/product_quantity"
         android:layout_width="150dp"
         android:layout_height="47dp"
         android:layout_marginLeft="190dp"
         android:layout_marginTop="160dp"
-        android:text="TextView" />
+        android:text="Qty:" />
+
 
     <TextView
         android:id="@+id/order_total"
         android:layout_width="366dp"
         android:layout_height="53dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="300dp"
         android:text="Order Total: Rs. 65000"
         android:textAlignment="center"
         android:textSize="34sp"
@@ -61,5 +62,31 @@
         android:layout_marginLeft="140dp"
         android:layout_marginTop="400dp"
         android:text="CHECKOUT" />
+
+    <Button
+        android:id="@+id/add_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="240dp"
+        android:text="+"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/reduce_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="240dp"
+        android:text="-"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/product_short_description"
+        android:layout_width="219dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="500dp"
+        android:text="This is a short description of the product" />
 
 </FrameLayout>

@@ -41,13 +41,13 @@ class DetailFragment : Fragment() {
                 product_image.setImageResource(imageId)
               *
               * */
-               var product_price=view.findViewById<TextView>(R.id.price)
+               var product_price=view.findViewById<TextView>(R.id.product_price)
                 product_price.text= price.toString()
                 var product_description=view.findViewById<TextView>(R.id.description)
                 product_description.text=shortDescription
                 var product_full_description=view.findViewById<TextView>(R.id.full_description)
                 product_full_description.text=longDescription
-                var product_image=view.findViewById<ImageView>(R.id.image)
+                var product_image=view.findViewById<ImageView>(R.id.product_image)
                 product_image.setImageResource(imageId)
 
               val buy=view.findViewById<Button>(R.id.buy)

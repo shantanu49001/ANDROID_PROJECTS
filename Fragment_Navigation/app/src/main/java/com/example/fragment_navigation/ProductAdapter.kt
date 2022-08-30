@@ -1,20 +1,14 @@
 package com.example.fragment_navigation
 
-import android.content.ClipData
-import android.content.DialogInterface
 import android.view.LayoutInflater
-import android.view.SurfaceHolder
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.fragment.app.FragmentContainerView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.extensions.LayoutContainer
-import kotlinx.android.synthetic.main.fragment_list.*
-import java.lang.reflect.Type
 
 class ProductAdapter(private val listener: (Product) -> Unit) : ListAdapter <Product,ProductAdapter.ViewHolder>(DiffCallback()) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductAdapter.ViewHolder {
@@ -39,9 +33,9 @@ class ProductAdapter(private val listener: (Product) -> Unit) : ListAdapter <Pro
             with(countryData) {
                 var product_name=containerView.findViewById<TextView>(R.id.name)
                 product_name.text = name
-                var product_image=containerView.findViewById<ImageView>(R.id.image)
+                var product_image=containerView.findViewById<ImageView>(R.id.product_image)
                 product_image.setImageResource(imageId)
-                var product_price=containerView.findViewById<TextView>(R.id.price)
+                var product_price=containerView.findViewById<TextView>(R.id.product_price)
                 product_price.text = "Price is {price}"
                 var product_description=containerView.findViewById<TextView>(R.id.description)
                 product_description.text=shortDescription
